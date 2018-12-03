@@ -1,101 +1,86 @@
-main
-{
-    padding: 2px;
-}
-
-.cat-img
-{
-    width: 300px;
-    height: 300px;
-}
-.cat-img:hover {
-    border: 2px solid #ff0000;
-}
-
-.cat
-{
-    margin-top: 27px;
-    margin-left: 3%;
-    margin-right: 0.5%;
-    width: 300px;
-    height: 500px;
-    border: 1px solid #000;
-    text-align: center;
-    display: inline-block;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.cat-text,
-.cat-details-text,
-.cat-name-link
+p
 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.cat-text
+
+.icon
 {
-    margin-top: -5px;
+    width: 40px;
 }
 
-.cat-name-link
+.cat
+{
+    border: 1px solid #b8b7b7;
+    display: inline-block;
+    margin: 20px;
+}
+
+.description
+{
+    margin: 6%;
+}
+
+.original
 {
     text-decoration: none;
     color: #000;
+    font: bold 20px sans-serif;
 }
 
 .cat:hover
 {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    border: 1px outset #6e6e6e;
+    box-shadow: 3px 3px 7px gray;
 }
 
-.cat .cat-text:hover
+.image:hover
 {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    color: #a52a2a;
+    height: 98%;
+    width: 98%;
+    border-width: 3px;
+    margin-bottom: -3px;
+    border-style: solid;
+    border-color: #ffc400 #ff5e00;
 }
 
-.cat .cat-text:hover
+.original:hover
 {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    color: #a52a2a;
+    text-shadow: 3px 3px 7px #ffab2e;
 }
 
-.switch
-{
-    visibility: hidden;
-}
-.icon
-{
-    height: 50px;
-    width: 50px;
-    display: block;
-}
-.cat-details-text
- {
-     display: none;
-     margin: 0 auto;
- }
-.switch:checked ~ label img
+.icon_lines:checked ~ label img
 {
     transform: rotate(90deg);
 }
-.switch:checked ~ .cat
+
+.icon_lines:checked ~ main .cat
 {
+    width: 600px;
     display: block;
-    margin: 10px;
-    margin-bottom: 27px;
-    height: auto;
 }
 
-.switch:checked ~ .cat .cat-details-text
+.icon_lines:checked ~ main .image
+{
+    height: 408px;
+    width: 528px;
+    margin: 36px 36px 6px;
+}
+
+.icon_lines:checked ~ main .image:hover
+{
+    height: 402px;
+    width: 522px;
+}
+
+.icon_lines:checked ~ main .in_detail
 {
     display: block;
+}
+
+.in_detail,
+.icon_lines,
+.icon_lines:checked ~ main .short
+{
+    display: none;
 }
