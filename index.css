@@ -1,0 +1,101 @@
+main
+{
+    padding: 2px;
+}
+
+.cat-img
+{
+    width: 300px;
+    height: 300px;
+}
+.cat-img:hover {
+    border: 2px solid #ff0000;
+}
+
+.cat
+{
+    margin-top: 27px;
+    margin-left: 3%;
+    margin-right: 0.5%;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #000;
+    text-align: center;
+    display: inline-block;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.cat-text,
+.cat-details-text,
+.cat-name-link
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cat-text
+{
+    margin-top: -5px;
+}
+
+.cat-name-link
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.cat:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.cat .cat-text:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    color: #a52a2a;
+}
+
+.cat .cat-text:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    color: #a52a2a;
+}
+
+.switch
+{
+    visibility: hidden;
+}
+.icon
+{
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+.cat-details-text
+ {
+     display: none;
+     margin: 0 auto;
+ }
+.switch:checked ~ label img
+{
+    transform: rotate(90deg);
+}
+.switch:checked ~ .cat
+{
+    display: block;
+    margin: 10px;
+    margin-bottom: 27px;
+    height: auto;
+}
+
+.switch:checked ~ .cat .cat-details-text
+{
+    display: block;
+}
